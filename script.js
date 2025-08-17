@@ -54,7 +54,7 @@ function drawBackground() {
 
 function animate() {
   drawBackground();
-  ripples.forEach((ripple, i) => {
+  ripples.forEach((ripple,  i) => {
     ripple.update();
     ripple.draw(ctx);
     if (ripple.opacity <= 0) ripples.splice(i, 1);
